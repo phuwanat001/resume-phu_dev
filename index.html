@@ -11,7 +11,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <script
+      src="https://kit.fontawesome.com/71660aaf4b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bootstrap.js"></script>
 
     <script src="js/bootstrap.bundle.js"></script>
@@ -35,10 +38,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                class="fa-solid fa-house"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutme">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exp">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#myskill">Skills</a>
@@ -61,23 +73,57 @@
               Hi There,<br /><span class="text-danger">I'm Phuwanat</span>
             </h1>
             <h5 class="typewriter" id="typewriter"></h5>
-            <a href="#">
-              <button class="btn btn-primary d-block mt-3 btn-lg">
-                Get Resume
-              </button></a
+
+            <button
+              id="downloadBtn"
+              class="btn btn-primary d-block mt-3 btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
             >
+              Get CV
+            </button>
           </div>
         </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-center ">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
           <img src="img/mev3.png" alt="" class="pic" />
         </div>
       </div>
     </div>
     <!-- About me -->
-    <div class="container mb-3" style="height: auto" id="aboutme">
+    <div class="container mb-3" style="height: 700px" id="aboutme">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1>About me</h1>
+        <div
+          class="col-lg-12 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="">About</h1>
+          <div class="underlineT"></div>
+        </div>
+        <div
+          class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <img src="img/g01.png" alt="" class="pic" />
+        </div>
+        <div
+          class="col-lg-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+            rerum quam reiciendis tempora quo ducimus velit a beatae, qui, earum
+            eos impedit! Sapiente ipsam voluptatum, dolores autem repudiandae
+            explicabo cumque.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="container mb-3" style="height: auto" id="exp">
+      <div class="row">
+        <div
+          class="col-lg-12 d-flex flex-column justify-content-center align-items-center mb-5"
+        >
+          <h1 class="">Experience</h1>
+          <div class="underlineT"></div>
         </div>
         <div class="col-lg-12">
           <div class="timeline">
@@ -136,7 +182,15 @@
 
     <!-- My Skills -->
     <div class="container my-4 p-3" style="height: auto" id="myskill">
-      <h1 class="text-center">Skills</h1>
+      <div class="row">
+        <div
+          class="col-lg-12 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="">Skills</h1>
+          <div class="underlineT"></div>
+        </div>
+      </div>
+
       <br />
       <div class="row">
         <div class="col-lg-4 col-sm-12 mb-3 text-center">
@@ -178,6 +232,13 @@
           <h3 class="text-center my-5">Other</h3>
           <div class="container mt-3">
             <img src="img/figma1.png" alt="" style="width: 100px" class="m-3" />
+            <img
+              src="img/firebase.png"
+              alt=""
+              style="width: 200px"
+              class="m-3"
+            />
+            <img src="img/docker.png" alt="" style="width: 120px" class="m-3" />
           </div>
         </div>
       </div>
@@ -187,56 +248,103 @@
     <hr />
     <br />
     <!-- My Project -->
-    <div class="container" style="height: auto" id="myproject">
+    <div class="container p-5" style="height: auto" id="myproject">
       <div class="row">
-        <h1 class="text-center">My Project</h1>
-        <!-- Card -->
-        <div class="col-lg-4 mt-3">
-          <div class="card">
+        <div
+          class="col-lg-12 d-flex flex-column justify-content-center align-items-center mb-5"
+        >
+          <h1 class="">My Project</h1>
+          <div class="underlineT"></div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 mt-3">
+          <div class="card h-100">
             <div class="card-header">
               <h5 class="text-dark">KasetConnect</h5>
               <img src="img/kaset.png" alt="" class="card-img" />
             </div>
             <div class="card-body">
               <div class="card-title text-dark">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur natus non omnis atque reprehenderit accusamus eligendi,
-                nihil excepturi culpa consequuntur.
+                <strong>Html + Css + Php</strong>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea facilis deserunt repudiandae officia unde
+                  voluptatibus veniam atque aut in!
+                </p>
               </div>
             </div>
-            <div class="card-footer text-dark">React + Nodejs + Mongodb</div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 mt-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="text-dark">POS</h5>
-              <img src="img/kaset.png" alt="" class="card-img" />
-            </div>
-            <div class="card-body">
-              <div class="card-title text-dark">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur natus non omnis atque reprehenderit accusamus eligendi,
-                nihil excepturi culpa consequuntur.
-              </div>
-            </div>
-            <div class="card-footer text-dark">Html + Css</div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-3">
-          <div class="card">
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 mt-3">
+          <div class="card h-100">
             <div class="card-header">
               <h5 class="text-dark">KasetConnect</h5>
               <img src="img/kaset.png" alt="" class="card-img" />
             </div>
             <div class="card-body">
               <div class="card-title text-dark">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur natus non omnis atque reprehenderit accusamus eligendi,
-                nihil excepturi culpa consequuntur.
+                <strong>Html + Css + Php</strong>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea facilis deserunt repudiandae officia unde
+                  voluptatibus veniam atque aut in!
+                </p>
               </div>
             </div>
-            <div class="card-footer text-dark">Html + Css + Php</div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 mt-3">
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="text-dark">KasetConnect</h5>
+              <img src="img/kaset.png" alt="" class="card-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-title text-dark">
+                <strong>Html + Css + Php</strong>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea facilis deserunt repudiandae officia unde
+                  voluptatibus veniam atque aut in!
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 mt-3">
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="text-dark">KasetConnect</h5>
+              <img src="img/kaset.png" alt="" class="card-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-title text-dark">
+                <strong>Html + Css + Php</strong>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea facilis deserunt repudiandae officia unde
+                  voluptatibus veniam atque aut in!
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
           </div>
         </div>
       </div>
@@ -245,6 +353,45 @@
     <div class="footer text-center mt-3">
       <p>Copyright &copy; Phu-Dev (2025)</p>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-dark">What do you want langue ?</h4>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center d-flex justify-content-around">
+            <a
+              href="pdf/Cv-th.pdf"
+              class="btn btn-primary"
+              style="width: 150px"
+              target="_blank"
+              >Thai</a
+            >
+            <a
+              href="pdf/Cv-eng.pdf"
+              class="btn btn-primary"
+              style="width: 150px"
+              target="_blank"
+              >Eng</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
     <script src="script/index.js"></script>
   </body>
 </html>
