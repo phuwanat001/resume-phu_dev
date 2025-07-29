@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phu-Dev Portfoilo</title>
-    <link rel="icon" type="image/x-icon" href="img/internet.png">
+    <title>Phu-Dev Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/coding.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script
       src="https://kit.fontawesome.com/71660aaf4b.js"
@@ -23,60 +27,70 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Phu-Dev</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Phu-Dev</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
-                class="fa-solid fa-house"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutme">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#exp">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#myskill">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#myproject">My Project</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutme">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#exp">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myskill">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myproject">My Project</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- First Container -->
-    <div class="container mb-3" style="height: 700px">
+    <div class="container mb-3 " style="height: 700px" id="hero">
       <div class="row h-100">
         <div class="col-lg-6 d-flex align-items-center">
           <!-- Contaileft -->
           <div class="container p-3">
-            <h1 class="text-m text-white">
-              Hi There,<br /><span class="text-danger">I'm Phuwanat</span>
+            <h1
+              class="text-m text-white animate__animated animate__fadeInLeft"
+              style="animation-delay: 0.5s; animation-fill-mode: both"
+            >
+              Hi There,<br /><span
+                class="text-danger animate__animated animate__fadeInLeft"
+                style="animation-delay: 1.5s; animation-fill-mode: both"
+                >I'm Phuwanat</span
+              >
             </h1>
-            <h5 class="typewriter" id="typewriter"></h5>
+            <h5
+              class="animate__animated animate__fadeInUp"
+              style="animation-delay: 2.5s; animation-fill-mode: both"
+            >
+              I AM Into Web Development
+            </h5>
 
             <button
               id="downloadBtn"
-              class="btn btn-primary d-block mt-3 btn-lg"
+              class="btn btn-primary d-block mt-3 btn-lg animate__animated animate__fadeInUp"
+              style="animation-delay: 3.5s; animation-fill-mode: both"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
             >
@@ -85,7 +99,12 @@
           </div>
         </div>
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-          <img src="img/mev3.png" alt="" class="pic" />
+          <img
+            src="img/mev3.png"
+            alt="Phuwanat's portrait"
+            class="pic animate__animated animate__fadeInUp"
+            style="animation-delay: 4.5s; animation-fill-mode: both"
+          />
         </div>
       </div>
     </div>
@@ -95,31 +114,23 @@
         <div
           class="col-lg-12 d-flex flex-column justify-content-center align-items-center"
         >
-          <h1 class="">About</h1>
-          <div class="underlineT"></div>
+          <h1 class="autoShow">About me</h1>
+          <div class="underlineT autoShow"></div>
         </div>
         <div
           class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
         >
-          <img src="img/g01.png" alt="" class="pic" />
+          <img
+            src="img/g01.png"
+            alt="Phuwanat's profile picture"
+            class="pic autoShow"
+          />
         </div>
         <div
           class="col-lg-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
         >
-          <p class="text-center">
-            My name is Phuwanat Pluaynongkhae,
-            I am an internship student from Mahasarakham University, Faculty of
-            Informatics, with a strong passion for web and application
-            development. I have hands-on experience in both frontend and backend
-            technologies, including HTML, CSS, JavaScript, Bootstrap, Tailwind
-            CSS, React, and Node.js. My backend and database skills span PHP,
-            MongoDB, Firebase, PhpMyAdmin, and Docker, enabling me to build
-            full-stack web applications with responsive and user-friendly
-            designs. Additionally, I am familiar with UI/UX design tools like
-            Figma, and I constantly seek to improve my skills by learning new
-            frameworks and tools. I am a responsible and adaptable team player
-            who is eager to take on new challenges and contribute to
-            collaborative projects.
+          <p class="text-center autoShow">
+           My name is Phuwanat Plueaynongkhae,<br> an internship student from Mahasarakham University, Faculty of Informatics, with a strong passion for web and application development
           </p>
         </div>
       </div>
@@ -131,13 +142,13 @@
         <div
           class="col-lg-12 d-flex flex-column justify-content-center align-items-center mb-5"
         >
-          <h1 class="">Experience</h1>
-          <div class="underlineT"></div>
+          <h1 class="autoShow">Experience</h1>
+          <div class="underlineT autoShow"></div>
         </div>
         <div class="col-lg-12">
           <div class="timeline">
             <div class="timeline-item">
-              <div class="timeline-content">
+              <div class="timeline-content fadeUp">
                 <h3>Robot Camp</h3>
                 <p class="year">2022</p>
                 <p>
@@ -149,7 +160,7 @@
             </div>
 
             <div class="timeline-item">
-              <div class="timeline-content">
+              <div class="timeline-content fadeUp">
                 <h3>Machine Learning</h3>
                 <p class="year">2023</p>
                 <p>
@@ -161,7 +172,7 @@
             </div>
 
             <div class="timeline-item">
-              <div class="timeline-content">
+              <div class="timeline-content fadeUp">
                 <h3>API & Framework</h3>
                 <p class="year">2024</p>
                 <p>
@@ -173,7 +184,7 @@
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-content">
+              <div class="timeline-content fadeUp">
                 <h3>Now</h3>
                 <p class="year">2025</p>
                 <p>
@@ -195,59 +206,110 @@
         <div
           class="col-lg-12 d-flex flex-column justify-content-center align-items-center"
         >
-          <h1 class="">Skills</h1>
-          <div class="underlineT"></div>
+          <h1 class="autoShow">Skills</h1>
+          <div class="underlineT autoShow"></div>
         </div>
       </div>
 
       <br />
       <div class="row">
-        <div class="col-lg-4 col-sm-12 mb-3 text-center">
-          <h3 class="text-center my-5">Fontend</h3>
-          <div class="container mt-3">
-            <img src="img/react.png" alt="" style="width: 100px" class="m-3" />
-            <img src="img/html.png" alt="" style="width: 100px" class="m-3" />
-            <img src="img/css1.png" alt="" style="width: 100px" class="m-3" />
+        <div class="col-lg-4 col-sm-12 mb-3 text-center autoShow">
+          <div class="container mt-3 autoShow">
+            <h3 class="text-center my-5">Frontend</h3>
+            <img
+              src="img/react.png"
+              alt="React"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
+            <img
+              src="img/html.png"
+              alt="HTML"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
+            <img
+              src="img/css1.png"
+              alt="CSS"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
             <img
               src="img/download.png"
-              alt=""
+              alt="JavaScript"
               style="width: 100px"
-              class="m-3"
+              class="m-3 autoShow"
             />
-            <img src="img/boot1.png" alt="" style="width: 100px" class="m-3" />
+            <img
+              src="img/boot1.png"
+              alt="Bootstrap"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 mb-3 text-center">
-          <h3 class="text-center my-5">Backend</h3>
+        <div class="col-lg-4 col-sm-12 mb-3 text-center autoShow">
+          <h3 class="text-center my-5 autoShow">Backend</h3>
 
           <div class="container mt-3">
-            <img src="img/nodejs.png" alt="" style="width: 100px" class="m-3" />
-            <img src="img/php.png" alt="" style="width: 100px" class="m-3" />
+            <img
+              src="img/nodejs.png"
+              alt="Node.js"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
+            <img
+              src="img/php.png"
+              alt="PHP"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 text-center">
-          <h3 class="text-center my-5">Database</h3>
+        <div class="col-lg-4 col-sm-12 text-center autoShow">
+          <h3 class="text-center my-5 autoShow">Database</h3>
           <div class="container mt-3">
-            <img src="img/mon.png" alt="" style="width: 100px" class="m-3" />
+            <img
+              src="img/mon.png"
+              alt="MongoDB"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
             <img
               src="img/myadmin.png"
-              alt=""
+              alt="phpMyAdmin"
               style="width: 100px"
-              class="m-3"
+              class="m-3 autoShow"
             />
           </div>
         </div>
-        <div class="col-lg-12 col-sm-12 text-center">
-          <h3 class="text-center my-5">Other</h3>
+        <div class="col-lg-12 col-sm-12 text-center autoShow">
+          <h3 class="text-center my-5 autoShow">Other</h3>
           <div class="container mt-3">
-            <img src="img/figma1.png" alt="" style="width: 100px" class="m-3" />
+            <img
+              src="img/figma1.png"
+              alt="Figma"
+              style="width: 100px"
+              class="m-3 autoShow"
+            />
             <img
               src="img/firebase.png"
-              alt=""
+              alt="Firebase"
               style="width: 200px"
-              class="m-3"
+              class="m-3 autoShow"
             />
-            <img src="img/docker.png" alt="" style="width: 120px" class="m-3" />
+            <img
+              src="img/docker.png"
+              alt="Docker"
+              style="width: 120px"
+              class="m-3 autoShow"
+            />
+            <img
+              src="img/git.png"
+              alt="Github"
+              style="width: 120px"
+              class="m-3 autoShow bg-white rounded-3"
+            />
           </div>
         </div>
       </div>
@@ -262,94 +324,34 @@
         <div
           class="col-lg-12 d-flex flex-column justify-content-center align-items-center mb-5"
         >
-          <h1 class="">My Project</h1>
-          <div class="underlineT"></div>
+          <h1 class="autoShow">My Project</h1>
+          <div class="underlineT autoShow"></div>
         </div>
 
         <!-- Card 1 -->
-        <div class="col-lg-3 mt-3">
+        <div class="col-lg-3 mt-3 autoShow">
           <div class="card h-100">
             <div class="card-header">
               <h5 class="text-dark">KasetConnect</h5>
-              <img src="img/kaset.png" alt="" class="card-img" />
+              <img
+                src="img/kaset.png"
+                alt="KasetConnect project screenshot"
+                class="card-img"
+              />
             </div>
             <div class="card-body">
-              <div class="card-title text-dark">
-                <strong>Html + Css + Php</strong>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis ea facilis deserunt repudiandae officia unde
-                  voluptatibus veniam atque aut in!
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">View</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-3 mt-3">
-          <div class="card h-100">
-            <div class="card-header">
-              <h5 class="text-dark">KasetConnect</h5>
-              <img src="img/kaset.png" alt="" class="card-img" />
-            </div>
-            <div class="card-body">
-              <div class="card-title text-dark">
-                <strong>Html + Css + Php</strong>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis ea facilis deserunt repudiandae officia unde
-                  voluptatibus veniam atque aut in!
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">View</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-3 mt-3">
-          <div class="card h-100">
-            <div class="card-header">
-              <h5 class="text-dark">KasetConnect</h5>
-              <img src="img/kaset.png" alt="" class="card-img" />
-            </div>
-            <div class="card-body">
-              <div class="card-title text-dark">
-                <strong>Html + Css + Php</strong>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis ea facilis deserunt repudiandae officia unde
-                  voluptatibus veniam atque aut in!
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">View</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-lg-3 mt-3">
-          <div class="card h-100">
-            <div class="card-header">
-              <h5 class="text-dark">KasetConnect</h5>
-              <img src="img/kaset.png" alt="" class="card-img" />
-            </div>
-            <div class="card-body">
-              <div class="card-title text-dark">
-                <strong>Html + Css + Php</strong>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis ea facilis deserunt repudiandae officia unde
-                  voluptatibus veniam atque aut in!
-                </p>
-              </div>
+              <strong class="text-dark"
+                >web application developing with the following stack:</strong
+              >
+              <ul>
+                <li class="text-dark">
+                  <b>Frontend:</b> React, Vite, Tailwind CSS
+                </li>
+                <li class="text-dark"><b>Backend:</b> Node.js</li>
+                <li class="text-dark"><b>Database:</b> MongoDB</li>
+                <li class="text-dark"><b>Design:</b> Figma</li>
+                <li class="text-dark"><b>Server:</b> Firebase</li>
+              </ul>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">View</a>
@@ -368,7 +370,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title text-dark">What do you want langue ?</h4>
+            <h4 class="modal-title text-dark">What language do you want?</h4>
             <button
               class="btn-close"
               data-bs-dismiss="modal"

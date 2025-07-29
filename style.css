@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .text-m {
     font-size: 5rem;
     color: rgb(0, 0, 0);
@@ -5,22 +12,56 @@
 
 .pic {
     height: 600px;
-    
 
+
+}
+
+/* smoth scroll */
+
+.autoShow {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUp {
+    animation: fadeUp both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateX(210px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
 
-
+/* Unused typewriter styles - commented out since not being used
 .typewriter {
     overflow: hidden;
-    /* ซ่อนส่วนเกิน */
     border-right: .15em solid orange;
-    /* ขีดเหมือนเคอร์เซอร์ */
     white-space: nowrap;
-    /* ไม่ให้ตัดบรรทัด */
     margin: 0 auto;
-
     letter-spacing: .05em;
     animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
 }
@@ -46,6 +87,7 @@
         border-color: orange
     }
 }
+*/
 
 body {
     background-color: #111;
@@ -63,7 +105,7 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 30px; /* ตำแหน่งเส้นหลัก timeline */
+    left: 30px;
     top: 0;
     bottom: 0;
     width: 4px;
@@ -72,14 +114,14 @@ body {
 
 .timeline-item {
     position: relative;
-    padding-left: 80px; /* ระยะห่างจากเส้น timeline ไปยังเนื้อหา */
+    padding-left: 80px;
     margin-bottom: 50px;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 22px; /* ตำแหน่งจุดกลม ให้ตรงกลางกับเส้นหลัก (30px - 10px/2) */
+    left: 22px;
     top: 10px;
     width: 20px;
     height: 20px;
@@ -87,7 +129,7 @@ body {
     border-radius: 50%;
 }
 
-.c-img{
+.c-img {
     width: 150px;
 }
 
@@ -103,7 +145,7 @@ body {
     color: #aaa;
 }
 
-.underlineT{
+.underlineT {
     width: 150px;
     height: 10px;
     background-color: red;
@@ -136,7 +178,9 @@ body {
     transform: scale(1.05);
 }
 
-
+#hero {
+    flex-direction: row;
+}
 
 
 /* Mobile  */
@@ -148,5 +192,27 @@ body {
 
     .pic {
         height: 300px;
+    }
+
+    #hero {
+        flex-direction: row-reverse;
+    }
+
+    .autoShow {
+        animation: text-appear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 100vh;
+    }
+
+    @keyframes text-appear {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
